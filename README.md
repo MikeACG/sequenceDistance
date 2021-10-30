@@ -1,6 +1,6 @@
 # sequenceDist: fast "GenomicRanges" style distance calculation.
 
-This is an R/C++ (using Rcpp and RcppParallel) implementation of the distance function used by the popular `GenomicRanges` Bioconductor package. This tool is meant to be used when we wish to find the nearest neighbor in a set of reference or ranges $R$ for each range in a query set $Q$ and the corresponding distance (i.e. Calculate all $|R|$ distances for each rage in $Q$, then record minimum distance and index of minimum).
+This is a R/C++ (using Rcpp and RcppParallel) implementation of the distance function used by the popular `GenomicRanges` Bioconductor package. This tool is meant to be used when we wish to find the nearest neighbor in a set of reference or ranges $R$ for each range in a query set $Q$ and the corresponding distance (i.e. Calculate all $|R|$ distances for each rage in $Q$, then record minimum distance and index of minimum).
 
 Calculating the resulting minimum distances and neighbors matrix can be very costly with the `GenomicRanges` functions when the query and reference sets are big. For a pair of ranges (most commonly genomic regions) $A$, $B$, each with integer properties c (sequence, most commonly the chromosome), s (start position) and e (end position), the block distance (as used by `GenomicRanges` v1.42.0) between A and B is defined as:
 

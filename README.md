@@ -13,7 +13,7 @@ Where `intersect(A, B)` is a function that computes the set of overlapping posit
 Note that a gap of 1 position in the last case is defined as a distance of 0 in `GenomicRanges` v1.42.0.
 
 ## Inputs
-Two matrices, one for the query and one for the reference. Each row of the matrices represents a range. The matrices should have 3 columns denoting the propertys of each range: sequence (most commonly the chromosome), start position in the sequence and end posiion in the sequence, in that order.
+Two matrices, one for the query and one for the reference. Each row of the matrices represents a range. The matrices should have 3 columns denoting the properties of each range: sequence (most commonly the chromosome), start position in the sequence and end posiion in the sequence, in that order.
 
 ## Output
 A matrix with as many rows as the query had. The first column denotes the distance to the nearest neighbor in the reference set and the second column the index of the reference range that is the nearest neighbor for the corresponding query range.

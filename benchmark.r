@@ -5,7 +5,7 @@ library(Rcpp)
 library(RcppParallel)
 Rcpp::sourceCpp("seqDists.cpp") # work on directory where this file is
 # set number of threads
-RcppParallel::setThreadOptions(numThreads = ceiling(RcppParallel::defaultNumThreads() * 0.75))
+RcppParallel::setThreadOptions(numThreads = 1)
 inputSize <- 500 # simulation size
 
 # setup the query data for simulation

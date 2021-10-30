@@ -18,4 +18,4 @@ Two matrices, one for the query and one for the reference. Each row of the matri
 ## Output
 A matrix with as many rows as the query had. The first column denotes the distance to the nearest neighbor in the reference set and the second column the index of the reference range that is the nearest neighbor for the corresponding query range.
 
-The file `benchmark.r` has a simulation where one can verfy that this tool produces the same results as `GenomicRanges` with an average improvement from 2.5 seconds to 0.001 when processing a query of 500 ranges and a reference of 500 ranges. This improvement is observed even without using additional cores. The script also serves as a usage example.
+The file `benchmark.r` has a simulation where one can verify that this tool produces the same results as `GenomicRanges` with an average improvement from 2.5 seconds to 0.001 when processing a query of 500 ranges and a reference of 500 ranges. This improvement is observed even without using additional cores. The script also serves as a usage example.
